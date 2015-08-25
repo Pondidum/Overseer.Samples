@@ -27,9 +27,9 @@ nugets_restore :restore do |n|
 end
 
 desc 'Set the assembly version number'
-asmver_files :version do |v|
+asmver :version do |v|
 
-  v.files = FileList["**/Properties/AssemblyVersion.cs"]
+  v.file_path = "AssemblyVersion.cs"
   v.attributes assembly_version: project_version,
                assembly_file_version: project_version,
                assembly_description: "Build: #{ci_build}, Commit Sha: #{ci_commit}"
