@@ -1,0 +1,14 @@
+﻿{
+    "type": "CandidateCreated",
+    "header": { },
+    "body": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+            "ID": { "type": "integer" },
+            "Name": { "type": "string" },
+            "Email": { "type": "string" }
+        },
+        "required": [ "ID", "Name" ]
+    }
+}
