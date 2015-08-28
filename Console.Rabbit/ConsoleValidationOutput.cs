@@ -21,26 +21,25 @@ namespace Console.Rabbit
 		}
 		public void Write(ValidationResult result)
 		{
-			var messages = BuildMessageLine(result);
 
 			System.Console.ForegroundColor = _colorMap[result.Status];
-            System.Console.WriteLine("{0}: {1}", result.Status, string.Join(", ", messages));
+
+			System.Console.WriteLine($"* [{result.Status}] {result.Message.Type}");
+			WriteRecursive(result.Children, 1);
+
 			System.Console.ResetColor();
 		}
 
-		private IEnumerable<string> BuildMessageLine(ValidationResult result)
+		private void WriteRecursive(IEnumerable<ValidationNode> nodes, int depth)
 		{
-			var node = result as ValidationResultNode;
-
-			if (node == null)
+			foreach (var node in nodes)
 			{
-				return new[]
-				{
-					string.Format("[{0}] {1}", result.Status, result.Message)
-				};
-			}
+				var offset = new string(' ', depth * 2);
 
-			return node.Results.SelectMany(BuildMessageLine);
+				System.Console.WriteLine($"{offset}* [{node.Status}]: {node.ValidationMessage}");
+
+				WriteRecursive(node.Children, depth + 1);
+			}
 		}
 	}
 }

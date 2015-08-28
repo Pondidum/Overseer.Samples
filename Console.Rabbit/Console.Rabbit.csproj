@@ -45,7 +45,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Overseer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Overseer.2.1.2\lib\net40\Overseer.dll</HintPath>
+      <HintPath>..\packages\Overseer.4.0.0\lib\net40\Overseer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Overseer.RabbitMQ, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Overseer.RabbitMQ.1.1.3\lib\net40\Overseer.RabbitMQ.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="RabbitMQ.Client, Version=3.5.4.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
@@ -72,12 +76,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <EmbeddedResource Include="Schemas\CandidateCreated.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Overseer.RabbitMQ\Overseer.RabbitMQ\Overseer.RabbitMQ.csproj">
-      <Project>{7cb32050-0141-49d3-863c-1df5e5d6409d}</Project>
-      <Name>Overseer.RabbitMQ</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
