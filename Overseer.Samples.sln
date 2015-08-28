@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing.PostTest.Xunit", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing.PostTest.Fixie", "Testing.PostTest.Fixie\Testing.PostTest.Fixie.csproj", "{C577150C-2439-4B58-91FC-3C3548D921CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.Rabbit", "Console.Rabbit\Console.Rabbit.csproj", "{D292652F-3CD7-4632-B295-78A356BD55CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overseer.RabbitMQ", "..\Overseer.RabbitMQ\Overseer.RabbitMQ\Overseer.RabbitMQ.csproj", "{7CB32050-0141-49D3-863C-1DF5E5D6409D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C577150C-2439-4B58-91FC-3C3548D921CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C577150C-2439-4B58-91FC-3C3548D921CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C577150C-2439-4B58-91FC-3C3548D921CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D292652F-3CD7-4632-B295-78A356BD55CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D292652F-3CD7-4632-B295-78A356BD55CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D292652F-3CD7-4632-B295-78A356BD55CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D292652F-3CD7-4632-B295-78A356BD55CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB32050-0141-49D3-863C-1DF5E5D6409D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB32050-0141-49D3-863C-1DF5E5D6409D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB32050-0141-49D3-863C-1DF5E5D6409D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB32050-0141-49D3-863C-1DF5E5D6409D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
